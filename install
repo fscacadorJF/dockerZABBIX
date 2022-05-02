@@ -1,0 +1,97 @@
+docker network create network-zabbix --driver bridge
+
+
+docker exec -t postgres pg_dumpall -c -U postgres > dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
+
+
+
+
+#!/bin/bash
+
+cd /var/backups/postgres/
+docker exec -t d167503a4118 pg_dumpall -c -U postgres > dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
+
+
+
+
+
+   19  apt-get install docker
+   20  docker network create network-zabbix --driver bridge
+   21  apt-get install docker
+   22  reboot
+   23  sudo apt remove docker docker-engine docker.io containerd runc
+   24  sudo apt remove docker 
+   25  sudo apt update
+   26  apt-get upgrade
+   27  apt autoremove
+   28  apt-get upgrade
+   29  docsudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+   30  apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+   31  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   32  sudo apt-key fingerprint 0EBFCD88
+   33  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu
+ bionic stable"
+   34  clear
+   35  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu
+ bionic stable"
+   36  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+   37  apt-get update
+   38  vim /etc/apt/sources.list.d/additional-repositories.list
+   39  vi /etc/apt/sources.list.d/additional-repositories.list
+   40  apt-get update
+   41  sudo apt install docker-ce docker-ce-cli containerd.io
+   42  apt-cache madison docker-ce
+   43  cd /var/opt/
+   44  ls
+   45  cd docker/
+   46  ls -lrta
+   47  docker network create monitoring-network --driver bridge
+   48  docker network create network-zabbix --driver bridge
+   49  docker network ls
+   50  ls -lrta
+   51  ¬docker-compose up -d
+   52  docker-compose up -d
+   53  docker compose up -d
+   54  docker compose -f docker-composer.yml 
+   55  mv docker-composer.yml docker-compose.yaml
+   56  docker compose ./docker-compose.yaml run
+   57  docker-compose up
+   58  docker-compose docker-compose.yaml 
+   59  vim Dockerfile
+   60  apt-get install vim
+   61  vim Dockerfile
+   62  docker-compose docker-compose.yaml 
+   63  docker compose ./docker-compose.yaml run
+   64  ¬docker-compose up -d
+   65  docker-compose up -d
+   66  mv docker-compose.yaml docker-compose.yml 
+   67  docker-compose -f docker-compose.yml 
+   68  sudo apt install docker-compose
+   69  docker-compose -f docker-compose.yml 
+   70  ¬docker-compose up -d
+   71  docker-compose up -d
+
+
+
+
+#!/bin/bash
+
+cd /var/opt/docker
+docker-compose up -d
+
+sh /usr/local/bin/scripts/dockerStart.sh
+
+sh /usr/local/bin/scripts/bkpPgsql.sh
+
+
+
+ 2005  wget https://repo.zabbix.com/zabbix/5.4/ubuntu/pool/main/z/zabbix/zabbix-agent_5.4.7-1+ubuntu20.04_amd64.deb
+ 2006  wget https://repo.zabbix.com/zabbix/5.4/ubuntu/pool/main/z/zabbix/zabbix-agent_5.4.7-1+ubuntu20.04_amd64.deb
+ 2007  dpkg -i zabbix-agent_5.4.7-1+ubuntu20.04_amd64.deb 
+ 2008  cd /etc/zabbix/
+ 2009  vim zabbix_agentd.conf 
+
+
+
+docker cp <containerId>:/file/path/within/container /host/path/target
+
